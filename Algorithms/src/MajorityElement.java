@@ -1,3 +1,11 @@
+/*
+    ENUNCIADO: Dado um array nums de tamanho n, retorne o elemento majoritário.
+               O elemento majoritário é o elemento que aparece mais do que ⌊n / 2⌋ vezes.
+               Você pode assumir que o elemento majoritário sempre existe no array.
+
+    LINK: https://leetcode.com/problems/majority-element/?envType=list&envId=r8m3m61s
+ */
+
 import java.util.Arrays;
 
 public class MajorityElement
@@ -23,5 +31,11 @@ public class MajorityElement
 
         return nums[n/2];
 
+    }
+
+    public static void main(String[] args)
+    {
+        int nums[] = {2 , 2 , 1 , 1 , 1 , 2 , 2};
+        System.out.println(majorityElement(nums));
     }
 }
